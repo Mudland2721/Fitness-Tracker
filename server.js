@@ -23,10 +23,6 @@ db.on("error", (error) => {
   console.log(`DATABASE ERROR:`, error);
 });
 
-//home route
-app.get("/", (req, res) => {
-  res.sendFile(__dirname, "../Develop/public/index.html");
-});
 // Listen on port 3000
 app.listen(PORT, (err) => {
   console.log("app is listening on:" + PORT);
